@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Add Font Awesome library -->
+
+    <style>
+      body {
+        background-color: rgb(207, 109, 23);
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 10%;
+      }
+
+      .orange-box {
+        display: flex;
+        flex-direction: row;
+        background-color: #6160632f;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 800px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .text-content {
+        margin-left: 20px;
+        text-align: right;
+      }
+
+      #title {
+        font-size: 10vh;
+        margin: 0;
+      }
+
+      #caption {
+        font-size: 18px;
+        font-family: "Times New Roman", Times, serif;
+        color: rgb(243, 235, 235);
+        margin-top: 10px;
+      }
+
+      .plan-button {
+        padding: 10px;
+        background-color: #f2eeeb;
+        color: #100f0f;
+        border-radius: 50px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .plan-button:hover {
+        background-color: #100f0f;
+        color: #f2eeeb;
+      }
+
+      img {
+        width: 30%;
+        border-radius: 5px;
+        transition: transform 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      .nav-bar {
+        width: 100%;
+        background-color: #333;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-bar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .nav-bar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #ddd;
+      }
+
+      .additional-info {
+        background-color: #ffe5b4;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 800px;
+        text-align: center;
+      }
+
+      @media (max-width: 1250px) {
+        .orange-box {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .text-content {
+          margin-left: 0;
+        }
+
+        img {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main id="main" class="container">
+      <div class="orange-box">
+        <img src="orangejuice.jpeg" id="image" alt="Error Loading Image" />
+        <div class="text-content">
+          <h1 id="title">THE PURE GOODNESS</h1>
+          <small id="caption">MORE VIBRANT LIFESTYLE STARTS WITH DOO-DO!</small>
+          <br />
+          <button class="plan-button">EXPLORE TASTE</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      &copy; 2024 Pure Goodness Juice. All Rights Reserved.
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
